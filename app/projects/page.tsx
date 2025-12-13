@@ -4,7 +4,7 @@ import { ExpandableCardDemo } from "@/components/ExpandableCardDemo";
 const ProjectsPage = () => {
   return (
     <>
-    <div className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-black mt-8 transition-colors duration-300">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 bg-clip-text text-transparent">

@@ -45,8 +45,14 @@ export function NavbarDemo() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <ThemeToggle className="z-50" />
-            <NavbarButton variant="secondary">Email me</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+          <a href="mailto:your.rshobhit255@gmail.com">
+  <NavbarButton variant="secondary">Email me</NavbarButton>
+</a>
+
+<a href="tel:+9506096144">
+  <NavbarButton variant="primary">Book a call</NavbarButton>
+</a>
+
           </div>
         </NavBody>
 
