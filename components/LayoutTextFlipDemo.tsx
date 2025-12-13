@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export function LayoutTextFlipDemo() {
   return (
-    <div className="container mx-auto px-5 py-10">
+    <div className="container mx-auto px-5 py-10 bg-white dark:bg-black transition-colors duration-300">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
         {/* Left Side - Text */}
         <motion.div
@@ -28,7 +28,7 @@ export function LayoutTextFlipDemo() {
         </motion.div>
 
         {/* Right Side - Image and Name */}
-        <div className="flex-1 flex flex-col items-center justify-center mt-12 lg:mt-0">
+        <div className="flex-1 flex flex-col items-center justify-center mt-12 lg:mt-12">
           <motion.img
             src="/shobhit.jpeg"
             alt="hero"

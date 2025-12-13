@@ -56,8 +56,12 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="relative flex h-[30rem] w-full justify-center space-x-10 overflow-y-auto rounded-md p-10 bg-white dark:bg-black"
+      className="relative flex h-screen w-full justify-center space-x-10 overflow-y-auto rounded-md p-10 bg-white dark:bg-black scrollbar-hide"
       ref={ref}
+      style={{
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+      }}
     >
       <div className="div relative flex items-start px-4 w-full">
         <div className="max-w-2xl w-full ml-16 lg:ml-32">

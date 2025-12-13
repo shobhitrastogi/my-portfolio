@@ -12,23 +12,25 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import Link from "next/link";
 
 export function NavbarDemo() {
   const navItems = [
     {
       name: "About",
-      link: "#about",
+      link: "/about",
     },
     {
       name: "Projects",
-      link: "#projects",
+      link: "/projects",
     },
     {
       name: "Contact",
-      link: "#cresume",
-    }, {
+      link: "/contact",
+    },
+    {
       name: "Resume",
-      link: "#resume",
+      link: "/resume",
     },
   ];
 
@@ -42,7 +44,7 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <ThemeToggle />
+            <ThemeToggle className="z-50" />
             <NavbarButton variant="secondary">Email me</NavbarButton>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
@@ -63,22 +65,25 @@ export function NavbarDemo() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-neutral-600 dark:text-neutral-300"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
             <div className="flex w-full flex-col gap-4">
+              <div className="flex justify-center">
+                <ThemeToggle />
+              </div>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
               >
-                Login
+                Email me
               </NavbarButton>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
