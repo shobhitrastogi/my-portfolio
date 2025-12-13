@@ -1,5 +1,6 @@
 import { FocusCardsDemo } from '@/components/FocusCardsDemo'
 import { ExpandableCardDemo } from "@/components/ExpandableCardDemo";
+import { FloatingDockDemo } from "@/components/FloatingDockDemo";
 
 const ProjectsPage = () => {
   return (
@@ -18,6 +19,7 @@ const ProjectsPage = () => {
       </div>
     </div>
  <ExpandableCardDemo />
+ <FloatingDockDemo />
     </>
   )
 }

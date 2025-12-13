@@ -7,10 +7,11 @@ import { AnimatedActionButton } from "@/components/AnimatedActionButton";
 import { TypewriterText } from "@/components/TypewriterText";
 import { Copy, Download, Mail, ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { FloatingDockDemo } from "@/components/FloatingDockDemo";
 
 export default function ResumePage() {
   const [copied, setCopied] = useState(false);
-  const email = "shobhit@example.com"; // Replace with your actual email
+  const email = "rshobhit255@gmail.com"; // Replace with your actual email
 
   const handleCopyEmail = async () => {
     try {
@@ -38,7 +39,7 @@ export default function ResumePage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="min-h-screen bg-black mt-12 text-white relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-teal-900/20" />
       
@@ -165,6 +166,7 @@ export default function ResumePage() {
           </motion.div>
         )}
       </div>
+      <FloatingDockDemo />
     </div>
   );
 }

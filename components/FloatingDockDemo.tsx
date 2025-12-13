@@ -2,6 +2,8 @@
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
+  IconBrandLine,
+  IconBrandLinkedin,
   IconBrandX,
   IconExchange,
   IconHome,
@@ -16,25 +18,25 @@ export function FloatingDockDemo() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
-      title: "Products",
+      title: "About Us",
       icon: (
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about",
     },
     {
-      title: "Components",
+      title: "Projects",
       icon: (
         <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/projects",
     },
     {
-      title: "Aceternity UI",
+      title: "Contact Us",
       icon: (
         <img
           src="https://assets.aceternity.com/logo-dark.png"
@@ -43,29 +45,29 @@ export function FloatingDockDemo() {
           alt="Aceternity Logo"
         />
       ),
-      href: "#",
+      href: "/contact",
     },
     {
-      title: "Changelog",
+      title: "Resume",
       icon: (
         <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/resume",
     },
 
     {
-      title: "Twitter",
+      title: "Linked In",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/shobhit-rastogi-/",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/shobhitrastogi",
     },
   ];
   return (

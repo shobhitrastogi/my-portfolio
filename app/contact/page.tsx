@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react'
+import { FloatingDockDemo } from '@/components/FloatingDockDemo'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const ContactPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
+    <div className="min-h-screen mt-12 bg-white dark:bg-black transition-colors duration-300">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -48,7 +49,7 @@ const ContactPage = () => {
                       📧
                     </div>
                     <span className="text-neutral-600 dark:text-neutral-400">
-                      hello@example.com
+                     rshobhit255@gmail.com
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -56,7 +57,7 @@ const ContactPage = () => {
                       📱
                     </div>
                     <span className="text-neutral-600 dark:text-neutral-400">
-                      +1 (555) 123-4567
+                      +91 9506096144
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -64,7 +65,7 @@ const ContactPage = () => {
                       📍
                     </div>
                     <span className="text-neutral-600 dark:text-neutral-400">
-                      San Francisco, CA
+                      India
                     </span>
                   </div>
                 </div>
@@ -75,13 +76,11 @@ const ContactPage = () => {
                   Follow Us
                 </h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors">
+                  <a href="https://www.linkedin.com/in/shobhit-rastogi-/" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors">
                     LinkedIn
                   </a>
-                  <a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors">
-                    Twitter
-                  </a>
-                  <a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors">
+                 
+                  <a href="https://github.com/shobhitrastogi" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors">
                     GitHub
                   </a>
                 </div>
@@ -166,6 +165,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <FloatingDockDemo />
     </div>
   )
 }
