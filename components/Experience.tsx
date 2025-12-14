@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 const Experience = () => {
   return (
     <div className="bg-white dark:bg-black transition-colors duration-300">
@@ -9,11 +11,15 @@ const Experience = () => {
           {/* Image Section */}
          {/* Image Section */}
 <div className="w-full flex justify-center">
-  <img
-    src="/exp.jpeg"
-    alt="Experience"
-    className="w-[85%] max-h-[420px] object-cover rounded-xl shadow-lg"
-  />
+    <Image
+      src="/exp.jpeg"
+      alt="Experience"
+      width={800} // actual image width
+      height={420} // actual image height
+      className="w-[85%] max-h-[420px] object-cover rounded-xl shadow-lg"
+      priority // use this if above-the-fold
+      sizes="(max-width: 768px) 100vw, 800px"
+    />
 </div>
 
 

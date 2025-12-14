@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+
+// React Icons
+import { 
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, 
+  SiPython, SiNodedotjs, SiExpress, SiFastapi, 
+  SiDocker, SiKubernetes,  
+} from "react-icons/si";
 
 export function SkillsDemo() {
   return (
@@ -33,7 +40,7 @@ export function SkillsDemo() {
 
 interface Skill {
   name: string;
-  icon: string;
+  icon: React.ReactNode;
   color: string;
   category: string;
 }
@@ -57,23 +64,19 @@ const SkillCard = ({ skill, index }: { skill: Skill; index: number }) => {
         "shadow-lg hover:shadow-xl transition-all duration-300",
         "overflow-hidden"
       )}
-      style={{
-        transformStyle: "preserve-3d",
-      }}
+      style={{ transformStyle: "preserve-3d" }}
     >
       {/* Background gradient effect */}
       <div 
         className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl"
-        style={{
-          background: `linear-gradient(135deg, ${skill.color}20, ${skill.color}40)`
-        }}
+        style={{ background: `linear-gradient(135deg, ${skill.color}20, ${skill.color}40)` }}
       />
-      
+
       {/* Skill icon */}
       <div className="relative z-10 flex flex-col items-center text-center">
         <div 
-          className="w-16 h-16 mb-4 rounded-xl flex items-center justify-center text-3xl font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300"
-          style={{ backgroundColor: skill.color }}
+          className="w-16 h-16 mb-4 rounded-xl flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition-transform duration-300"
+          style={{ backgroundColor: skill.color, color: "#fff" }}
         >
           {skill.icon}
         </div>
@@ -99,83 +102,19 @@ const SkillCard = ({ skill, index }: { skill: Skill; index: number }) => {
   );
 };
 
+// Skills array with React Icons
 const skills: Skill[] = [
-  {
-    name: "HTML",
-    icon: "🌐",
-    color: "#E34F26",
-    category: "Frontend"
-  },
-  {
-    name: "CSS",
-    icon: "🎨",
-    color: "#1572B6",
-    category: "Frontend"
-  },
-  {
-    name: "JavaScript",
-    icon: "⚡",
-    color: "#F7DF1E",
-    category: "Frontend"
-  },
-  {
-    name: "React",
-    icon: "⚛️",
-    color: "#61DAFB",
-    category: "Frontend"
-  },
-  {
-    name: "Next.js",
-    icon: "▲",
-    color: "#000000",
-    category: "Frontend"
-  },
-  {
-    name: "Python",
-    icon: "🐍",
-    color: "#3776AB",
-    category: "Backend"
-  },
-  {
-    name: "Node.js",
-    icon: "🟢",
-    color: "#339933",
-    category: "Backend"
-  },
-  {
-    name: "Express",
-    icon: "🚀",
-    color: "#000000",
-    category: "Backend"
-  },
-  {
-    name: "FastAPI",
-    icon: "⚡",
-    color: "#009688",
-    category: "Backend"
-  },
-  {
-    name: "Docker",
-    icon: "🐳",
-    color: "#2496ED",
-    category: "DevOps"
-  },
-  {
-    name: "Kubernetes",
-    icon: "☸️",
-    color: "#326CE5",
-    category: "DevOps"
-  },
-  {
-    name: "AWS",
-    icon: "☁️",
-    color: "#FF9900",
-    category: "Cloud"
-  },
-  {
-    name: "Azure",
-    icon: "🔷",
-    color: "#0078D4",
-    category: "Cloud"
-  }
+  { name: "HTML", icon: <SiHtml5 />, color: "#E34F26", category: "Frontend" },
+  { name: "CSS", icon: <SiCss3 />, color: "#1572B6", category: "Frontend" },
+  { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E", category: "Frontend" },
+  { name: "React", icon: <SiReact />, color: "#61DAFB", category: "Frontend" },
+  { name: "Next.js", icon: <SiNextdotjs />, color: "#000000", category: "Frontend" },
+  { name: "Python", icon: <SiPython />, color: "#3776AB", category: "Backend" },
+  { name: "Node.js", icon: <SiNodedotjs />, color: "#339933", category: "Backend" },
+  { name: "Express", icon: <SiExpress />, color: "#000000", category: "Backend" },
+  { name: "FastAPI", icon: <SiFastapi />, color: "#009688", category: "Backend" },
+  { name: "Docker", icon: <SiDocker />, color: "#2496ED", category: "DevOps" },
+  { name: "Kubernetes", icon: <SiKubernetes />, color: "#326CE5", category: "DevOps" },
+  // { name: "AWS", icon: <SiAmazonaws />, color: "#FF9900", category: "Cloud" },
+  // { name: "Azure", icon: <SiMicrosoftazure />, color: "#0078D4", category: "Cloud" }
 ];

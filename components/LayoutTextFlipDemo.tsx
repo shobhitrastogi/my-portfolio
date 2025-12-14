@@ -1,7 +1,8 @@
 "use client";
 import { LayoutTextFlip } from "@/components/ui/layout-text-flip";
 import { motion } from "motion/react";
-
+import Image from "next/image";
+const MotionImage = motion(Image);
 export function LayoutTextFlipDemo() {
   return (
     <div className="container mx-auto px-5 py-10 bg-white dark:bg-black transition-colors duration-300">
@@ -29,14 +30,17 @@ export function LayoutTextFlipDemo() {
 
         {/* Right Side - Image and Name */}
         <div className="flex-1 flex flex-col items-center justify-center mt-12 lg:mt-12">
-          <motion.img
-            src="/shobhit.jpeg"
-            alt="hero"
-            className="lg:w-[700px] lg:h-[450px] w-full max-w-[500px] h-auto object-cover rounded-lg shadow-2xl"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          />
+  <MotionImage
+    src="/shobhit.jpeg"
+    alt="Shobhit Rastogi – Full Stack Developer"
+    width={700}
+    height={450}
+    priority
+    className="lg:w-[700px] lg:h-[450px] w-full max-w-[500px] h-auto object-cover rounded-lg shadow-2xl"
+    initial={{ opacity: 0, x: 50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+  />
 
           <motion.h1
             className="title-font sm:text-4xl text-3xl font-medium text-black dark:text-white mt-4"
