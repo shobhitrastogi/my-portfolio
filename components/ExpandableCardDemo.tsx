@@ -209,7 +209,7 @@ const cards = [
     title: "Education Application",
     src: "/gm.png",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://geminieducation.com.au/",
     content: () => {
       return (
         <p>
@@ -223,7 +223,7 @@ const cards = [
     title: "Stella College",
     src: "/sm.png",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.stellacollege.edu.au/",
     content: () => {
       return (
         <p>
@@ -232,13 +232,59 @@ const cards = [
       );
     },
   },
-
+  {
+  description: "Resume Optimization, AI Suggestions, Career Growth, Job Success",
+  title: "Resume Booster Pro",
+  src: "/resume.jpeg",
+  ctaText: "Live",
+  ctaLink: "https://resume-booster-pro-black.vercel.app/",
+  content: () => {
+    return (
+      <p>
+        Resume Booster Pro is a smart web application designed to help job seekers
+        improve and optimize their resumes for better career opportunities.
+        The platform analyzes resume content and provides intelligent suggestions
+        to enhance clarity, structure, and impact. Built using modern technologies
+        like Next.js, React, Node.js, and advanced AI-powered analysis, it offers
+        a clean, responsive interface for users to quickly refine their resumes.
+        With features such as instant feedback, resume enhancement tips, and
+        ATS-friendly formatting guidance, Resume Booster Pro empowers candidates
+        to stand out in competitive job markets and increase their chances of
+        landing interviews.
+      </p>
+    );
+  },
+},
+{
+  description: "Event Planning, Celebrations, Wedding & Party Management",
+  title: "Rose Events",
+  src: "/rose-event.png",
+  ctaText: "Live",
+  ctaLink: "https://rose-events.vercel.app/",
+  content: () => {
+    return (
+      <p>
+        Rose Events is a modern event management platform designed to help
+        users discover, plan, and organize memorable celebrations such as
+        weddings, parties, corporate gatherings, and special occasions.
+        The platform provides an elegant and responsive interface where
+        visitors can explore event services, view galleries, and connect
+        with organizers easily. Built with modern web technologies like
+        Next.js, React, and responsive UI frameworks, the website delivers
+        a fast, visually engaging experience across all devices. Rose Events
+        simplifies the process of planning events by showcasing services,
+        event inspirations, and professional event solutions in one
+        beautifully designed digital platform.
+      </p>
+    );
+  },
+},
   {
     description: "Order Food Fast, Anywhere",
     title: "Ecommerce Application ",
     src: "/fm.jpeg",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://food-ordering-frontend-chi.vercel.app/",
     content: () => {
       return (
         <p>
@@ -252,7 +298,7 @@ const cards = [
     title: "NoteBook Application",
     src: "/im.png",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://inotebook-rastogi.netlify.app/",
     content: () => {
       return (
         <p>
@@ -266,7 +312,7 @@ const cards = [
     title: "Video Call Application",
     src: "ym.jpeg",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://video-call-application-six.vercel.app/",
     content: () => {
       return (
         <p>
@@ -279,7 +325,7 @@ const cards = [
     title: "Youtube Clone",
     src: "ym.png",
     ctaText: "Live",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://youtuve.netlify.app/",
     content: () => {
       return (
         <p>

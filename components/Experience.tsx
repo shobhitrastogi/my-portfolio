@@ -32,7 +32,7 @@ const Experience = () => {
             <p className="leading-relaxed text-gray-700 dark:text-gray-300 transition-colors duration-300">
               Hi there! I’m <strong>Shobhit Rastogi</strong>, a results-driven{" "}
               <strong>Full-Stack Developer</strong> with{" "}
-              <strong>1.5+ years of professional experience</strong> at{" "}
+              <strong>2+ years of professional experience</strong> at{" "}
               <strong>Kiyaan Software Solutions</strong>. I specialize in crafting{" "}
               <strong>scalable, secure, and high-performance applications</strong>{" "}
               using modern development practices and clean architecture. My core
